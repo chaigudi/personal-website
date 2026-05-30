@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Technical blogs by Chaithanya Gudiwada on Kubernetes, AWS EKS, Gateway API, Elasticsearch, and cloud platform engineering."
+    >
+    <title>Blogs | Chaithanya Gudiwada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Chaithanya Gudiwada home">
+          <span class="brand-mark">CG</span>
+          <span>Chaithanya Gudiwada</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="blogs-title">
+        <div class="page-hero-inner">
+          <p class="eyebrow">Technical Blogs</p>
+          <h1 id="blogs-title">Field notes on Kubernetes, AWS EKS, and scalable infrastructure.</h1>
+          <p>
+            Practical writing from platform engineering work: migrations, cluster design,
+            reliability patterns, and production-minded operations.
+          </p>
+        </div>
+      </section>
+
+      <section class="section blogs-page" aria-label="Blog articles">
+        <div class="blog-grid">
+          <article class="blog-card blog-card-large">
+            <div class="blog-art gateway-art" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="blog-body">
+              <p class="blog-meta">Nov 26, 2025 - 5 min read</p>
+              <h2>Zero-Downtime Migration from Kubernetes Ingress to Gateway API on AWS EKS</h2>
+              <p>
+                A hands-on guide for moving traffic from Kubernetes Ingress to Gateway API on
+                Amazon EKS while preserving availability and release confidence.
+              </p>
+              <a href="https://medium.com/@gudiwada.chaithu/zero-downtime-migration-from-kubernetes-ingress-to-gateway-api-on-aws-eks-642f3432d394" target="_blank" rel="noreferrer">
+                Read on Medium <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="blog-card blog-card-large">
+            <div class="blog-art search-art" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="blog-body">
+              <p class="blog-meta">Oct 7, 2025 - 4 min read</p>
+              <h2>Elasticsearch Best Practices: How to Build a Fast, Stable, and Scalable Cluster</h2>
+              <p>
+                Practical cluster design guidance for Elasticsearch performance, stability,
+                shard planning, replica strategy, and operational reliability.
+              </p>
+              <a href="https://medium.com/@gudiwada.chaithu/elasticsearch-best-practices-how-to-build-a-fast-stable-and-scalable-cluster-dc7ac09f3c05" target="_blank" rel="noreferrer">
+                Read on Medium <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>(c) <span id="year"></span> Chaithanya Gudiwada</p>
+      <a href="index.html">Back home</a>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
