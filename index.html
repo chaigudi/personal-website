@@ -15,8 +15,27 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/favicon-512.png">
+    <meta name="theme-color" content="#101817">
+    <!-- SEO -->
+    <link rel="canonical" href="https://chaigudi.github.io/personal-website/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chaigudi.github.io/personal-website/">
+    <meta property="og:title" content="Chaithanya Gudiwada | AI Platform & DevOps Engineer">
+    <meta property="og:description" content="Senior DevOps and AI Platform Engineer working on agentic AI systems, LLM scaling, Kubernetes, AWS, Terraform, and reliable cloud delivery.">
+    <meta property="og:image" content="https://chaigudi.github.io/personal-website/assets/favicon-512.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chaithanya Gudiwada | AI Platform & DevOps Engineer">
+    <meta name="twitter:description" content="Senior DevOps and AI Platform Engineer working on agentic AI systems, LLM scaling, Kubernetes, AWS, Terraform, and reliable cloud delivery.">
+    <meta name="twitter:image" content="https://chaigudi.github.io/personal-website/assets/favicon-512.png">
   </head>
   <body id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
         <a class="brand" href="#top" aria-label="Chaithanya Gudiwada home">
@@ -61,14 +80,20 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-media" src="assets/hero-cloud-platform.png" alt="">
+        <picture class="hero-media-wrap">
+          <source srcset="assets/hero-cloud-platform.webp" type="image/webp">
+          <img class="hero-media" src="assets/hero-cloud-platform.png" alt="" fetchpriority="high">
+        </picture>
         <div class="hero-overlay"></div>
         <div class="hero-inner">
           <div class="hero-content">
             <figure class="hero-avatar">
-              <img src="assets/chaithanya-gudiwada-portrait.jpg" alt="Portrait of Chaithanya Gudiwada">
+              <picture>
+                <source srcset="assets/chaithanya-gudiwada-portrait.webp" type="image/webp">
+                <img src="assets/chaithanya-gudiwada-portrait.jpg" alt="Chaithanya Gudiwada, AI Platform and DevOps Engineer" fetchpriority="high">
+              </picture>
             </figure>
             <p class="eyebrow">Agentic AI | LLM Scaling | Cloud Reliability</p>
             <h1 id="hero-title">Building production-ready AI systems on reliable cloud platforms.</h1>
