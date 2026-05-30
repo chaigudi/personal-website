@@ -157,8 +157,8 @@ img {
 
 .linkedin-logo {
   border-radius: 3px;
-  background: currentColor;
-  color: var(--charcoal);
+  background: #0a66c2;
+  color: #fff;
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0;
