@@ -16,8 +16,8 @@
     >
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <header class="site-header" id="top">
+  <body id="top">
+    <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
         <a class="brand" href="#top" aria-label="Chaithanya Gudiwada home">
           <span class="brand-mark">CG</span>
@@ -33,6 +33,21 @@
           <a href="#projects">Projects</a>
           <a href="blogs.html">Blogs</a>
           <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions" aria-label="Profile links">
+          <a href="https://www.linkedin.com/in/chaithanyagudiwada" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://github.com/chaigudi" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://medium.com/@gudiwada.chaithu" target="_blank" rel="noreferrer" aria-label="Medium profile">
+            <i data-lucide="newspaper"></i>
+          </a>
+          <a class="nav-resume" href="assets/Chaithanya-Gudiwada-Resume.pdf" download aria-label="Download resume">
+            <i data-lucide="download"></i>
+            <span>Resume</span>
+          </a>
         </div>
       </nav>
     </header>
@@ -73,10 +88,6 @@
               <dt>99.9%</dt>
               <dd>Cluster uptime supported</dd>
             </div>
-            <div>
-              <dt>40%</dt>
-              <dd>MTTR reduction</dd>
-            </div>
           </dl>
         </div>
       </section>
@@ -109,7 +120,7 @@
             <span class="node node-d"></span>
             <span class="node node-e"></span>
           </div>
-          <div>
+          <div class="visual-copy">
             <p class="eyebrow">Platform Thinking</p>
             <h2>Reliable releases come from clear architecture, calm automation, and fast feedback.</h2>
           </div>

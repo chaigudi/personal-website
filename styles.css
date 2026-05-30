@@ -61,7 +61,8 @@ img {
 }
 
 .brand,
-.nav-links {
+.nav-links,
+.nav-actions {
   display: flex;
   align-items: center;
 }
@@ -88,7 +89,8 @@ img {
   gap: 8px;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-actions a {
   padding: 10px 14px;
   border-radius: 8px;
   color: rgba(255, 255, 255, 0.82);
@@ -97,9 +99,37 @@ img {
 }
 
 .nav-links a:hover,
-.nav-links a:focus-visible {
+.nav-links a:focus-visible,
+.nav-actions a:hover,
+.nav-actions a:focus-visible {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
+}
+
+.nav-actions {
+  gap: 6px;
+}
+
+.nav-actions a {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-actions svg {
+  width: 18px;
+  height: 18px;
+}
+
+.nav-actions .nav-resume {
+  width: auto;
+  gap: 8px;
+  padding: 0 13px;
+  border-color: rgba(224, 160, 79, 0.6);
+  color: #f4c27b;
 }
 
 .nav-toggle {
@@ -235,7 +265,7 @@ img {
   width: min(760px, 100%);
   margin: 56px 0 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.08);
@@ -287,6 +317,15 @@ img {
   margin: 0;
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 1.02;
+}
+
+.visual-copy {
+  align-self: center;
+  max-width: 620px;
+}
+
+.visual-copy .eyebrow {
+  margin-bottom: 18px;
 }
 
 .system-map {
@@ -717,6 +756,10 @@ img {
     place-items: center;
   }
 
+  .nav {
+    flex-wrap: wrap;
+  }
+
   .nav-links {
     position: absolute;
     top: 72px;
@@ -735,6 +778,10 @@ img {
 
   .nav-links a {
     padding: 14px;
+  }
+
+  .nav-actions {
+    margin-left: auto;
   }
 
   .hero {
@@ -782,6 +829,17 @@ img {
 
   .brand span:last-child {
     display: none;
+  }
+
+  .nav-actions .nav-resume span {
+    display: none;
+  }
+
+  .nav-actions a,
+  .nav-actions .nav-resume {
+    width: 38px;
+    height: 38px;
+    padding: 0;
   }
 
   .hero {
